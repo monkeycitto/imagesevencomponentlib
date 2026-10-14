@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>imageseven design system</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Outfit:wght@100;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="library.css?v=2">
+  <link rel="stylesheet" href="docs.css">
+  <script>
+    try {
+      var stored = localStorage.getItem("is-theme");
+      if (!stored && matchMedia("(prefers-color-scheme: dark)").matches) stored = "dark";
+      if (stored === "dark") document.documentElement.setAttribute("data-theme", "dark");
+    } catch (error) {}
+  </script>
+</head>
+<body>
+  <div class="docs">
+    <header class="docs-top">
+      <p class="ui-subhead">Design system · web &amp; product</p>
+      <button class="btn btn-outline btn-sm" type="button" data-theme-toggle aria-pressed="false">Dark mode</button>
+    </header>
+    <aside class="docs-nav">
+      <a class="wordmark" href="#overview"><img src="logo.png" alt="imageseven"></a>
+      <p class="group ui-caption-1">Foundations</p>
+      <a class="navlink" href="#overview" aria-current="true">Overview</a>
+      <a class="navlink" href="#colour">Colour</a>
+      <a class="navlink" href="#type">Type</a>
+      <a class="navlink" href="#space">Space</a>
+      <p class="group ui-caption-1">Marketing</p>
+      <a class="navlink" href="#actions">Actions</a>
+      <a class="navlink" href="#navigation">Navigation</a>
+      <a class="navlink" href="#hero">Hero</a>
+      <a class="navlink" href="#features">Features</a>
+      <a class="navlink" href="#proof">Proof</a>
+      <a class="navlink" href="#convert">Convert</a>
+      <a class="navlink" href="#stories">Stories</a>
+      <p class="group ui-caption-1">Application</p>
+      <a class="navlink" href="#application">Shell</a>
+      <a class="navlink" href="#forms">Forms</a>
+      <a class="navlink" href="#dates">Dates</a>
+      <a class="navlink" href="#choices">Choices</a>
+      <a class="navlink" href="#metrics">Metrics</a>
+      <a class="navlink" href="#chrome">Chrome</a>
+      <a class="navlink" href="#records">Records</a>
+      <a class="navlink" href="#files">Files</a>
+      <a class="navlink" href="#overlays">Overlays</a>
+      <a class="navlink" href="#commands">Commands</a>
+      <a class="navlink" href="#feedback">Feedback</a>
+      <a class="navlink" href="#account">Account</a>
+    </aside>
+
+    <div class="docs-main">
+      <main class="docs-content">
+        <header class="cover" id="overview">
+          <p class="kicker ed-caption">imageseven</p>
+          <h1 class="ed-display">A system for consistent pages and tools.</h1>
+          <p class="lede ed-body">Taken from imageseven.com.au. Use it to build marketing sites, landing pages, and applications that share one type scale, one spacing scale, and one component set. Editorial pages use the brand scale. Product UI uses the interface scale. Dark mode is part of the system. Commerce patterns are not.</p>
+        </header>
+
+        <section class="section" id="colour">
+          <p class="kicker ed-caption">01 — Colour</p>
+          <h2 class="ed-title">Colour</h2>
+          <p class="lede ed-body">The consistent use of colour is an important element of the imageseven visual identity. The following colours are approved for use when producing imageseven content. These colours are the only approved colours that can be used when reproducing the logo and logotype.</p>
+          <p class="lede ed-body">The primary palette should be used for all formal communications. The secondary palette can be used in imageseven marketing and promotional activities.</p>
+          <h3 class="ui-title-2" style="margin-top:32px">Primary</h3>
+          <div class="palette palette-primary" style="margin-top:16px">
+            <article class="palette-card">
+              <div class="palette-chip" style="--chip:var(--ultramarine);--on:#fff">
+                <strong>ultramarine</strong>
+                <span>Hex #0085CA</span>
+                <span>RGB 0, 133, 202</span>
+                <span>Pantone Process Blue C</span>
+              </div>
+              <div class="palette-tints" style="--chip:var(--ultramarine)">
+                <i style="--mix:100%;--tint:#fff">100%</i><i style="--mix:75%;--tint:#fff">75%</i><i style="--mix:50%;--tint:var(--granite)">50%</i><i style="--mix:25%;--tint:var(--granite)">25%</i><i style="--mix:10%;--tint:var(--granite)">10%</i>
+              </div>
+            </article>
+            <article class="palette-card">
+              <div class="palette-chip" style="--chip:var(--granite);--on:#fff">
+                <strong>granite</strong>
+                <span>Hex #333F48</span>
+                <span>RGB 51, 63, 72</span>
+                <span>Pantone 432 C</span>
+              </div>
+              <div class="palette-tints" style="--chip:var(--granite)">
+                <i style="--mix:100%;--tint:#fff">100%</i><i style="--mix:75%;--tint:#fff">75%</i><i style="--mix:50%;--tint:var(--granite)">50%</i><i style="--mix:25%;--tint:var(--granite)">25%</i><i style="--mix:10%;--tint:var(--granite)">10%</i>
+              </div>
+            </article>
+          </div>
+          <h3 class="ui-title-2" style="margin-top:40px">Secondary</h3>
+          <div class="palette palette-secondary" style="margin-top:16px">
+            <article class="palette-card">
+              <div class="palette-chip" style="--chip:var(--turquoise);--on:#fff">
+                <strong>turquoise</strong>
+                <span>Hex #009CA6</span>
+                <span>RGB 0, 156, 166</span>
+                <span>Pantone 320 C</span>
+              </div>
+              <div class="palette-tints" style="--chip:var(--turquoise)">
+                <i style="--mix:100%;--tint:#fff">100%</i><i style="--mix:75%;--tint:#fff">75%</i><i style="--mix:50%;--tint:var(--granite)">50%</i><i style="--mix:25%;--tint:var(--granite)">25%</i><i style="--mix:10%;--tint:var(--granite)">10%</i>
+              </div>
+            </article>
+            <article class="palette-card">
+              <div class="palette-chip" style="--chip:var(--chartreuse);--on:var(--granite)">
+                <strong>chartreuse</strong>
+                <span>Hex #D0DF00</span>
+                <span>RGB 208, 223, 0</span>
+                <span>Pantone 389 C</span>
+              </div>
+              <div class="palette-tints" style="--chip:var(--chartreuse)">
+                <i style="--mix:100%;--tint:var(--granite)">100%</i><i style="--mix:75%;--tint:var(--granite)">75%</i><i style="--mix:50%;--tint:var(--granite)">50%</i><i style="--mix:25%;--tint:var(--granite)">25%</i><i style="--mix:10%;--tint:var(--granite)">10%</i>
+              </div>
+            </article>
+            <article class="palette-card">
+              <div class="palette-chip" style="--chip:var(--citrine);--on:var(--granite)">
+                <strong>citrine</strong>
+                <span>Hex #FFD700</span>
+                <span>RGB 255, 215, 0</span>
+                <span>Pantone Yellow 012 C</span>
+              </div>
+              <div class="palette-tints" style="--chip:var(--citrine)">
+                <i style="--mix:100%;--tint:var(--granite)">100%</i><i style="--mix:75%;--tint:var(--granite)">75%</i><i style="--mix:50%;--tint:var(--granite)">50%</i><i style="--mix:25%;--tint:var(--granite)">25%</i><i style="--mix:10%;--tint:var(--granite)">10%</i>
+              </div>
+            </article>
+            <article class="palette-card">
+              <div class="palette-chip" style="--chip:var(--magenta);--on:#fff">
+                <strong>magenta</strong>
+                <span>Hex #D00070</span>
+                <span>RGB 208, 0, 112</span>
+                <span>Pantone 226 C</span>
+              </div>
+              <div class="palette-tints" style="--chip:var(--magenta)">
+                <i style="--mix:100%;--tint:#fff">100%</i><i style="--mix:75%;--tint:#fff">75%</i><i style="--mix:50%;--tint:var(--granite)">50%</i><i style="--mix:25%;--tint:var(--granite)">25%</i><i style="--mix:10%;--tint:var(--granite)">10%</i>
+              </div>
+            </article>
+            <article class="palette-card">
+              <div class="palette-chip" style="--chip:var(--turmeric);--on:#fff">
+                <strong>turmeric</strong>
+                <span>Hex #FE5000</span>
+                <span>RGB 254, 80, 0</span>
+                <span>Pantone Orange 021 C</span>
+              </div>
+              <div class="palette-tints" style="--chip:var(--turmeric)">
+                <i style="--mix:100%;--tint:#fff">100%</i><i style="--mix:75%;--tint:#fff">75%</i><i style="--mix:50%;--tint:var(--granite)">50%</i><i style="--mix:25%;--tint:var(--granite)">25%</i><i style="--mix:10%;--tint:var(--granite)">10%</i>
+              </div>
+            </article>
+            <article class="palette-card">
+              <div class="palette-chip" style="--chip:var(--amethyst);--on:#fff">
+                <strong>amethyst</strong>
+                <span>Hex #9B26B6</span>
+                <span>RGB 155, 38, 182</span>
+                <span>Pantone 2592 C</span>
+              </div>
+              <div class="palette-tints" style="--chip:var(--amethyst)">
+                <i style="--mix:100%;--tint:#fff">100%</i><i style="--mix:75%;--tint:#fff">75%</i><i style="--mix:50%;--tint:var(--granite)">50%</i><i style="--mix:25%;--tint:var(--granite)">25%</i><i style="--mix:10%;--tint:var(--granite)">10%</i>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="type">
+          <p class="kicker ed-caption">02 — Type</p>
+          <h2 class="ed-title">Typography</h2>
+          <p class="lede ed-body">Museo Slab in its various weights and faces is used for major headings and titles in all communications.</p>
+          <p class="lede ed-body">Dupla in its various weights and faces is used for headings and body copy in all communications.</p>
+          <p class="lede ed-body">Aptos is to be used for email correspondence and communications where Dupla and Museo Slab is unavailable. Aptos 11pt is the typeface for email correspondence.</p>
+
+          <div class="type-family" style="font-family:var(--font-sans)">
+            <div class="type-family-head">
+              <h3 class="ui-title-2">Dupla</h3>
+              <p class="ui-body">Headings and body copy</p>
+            </div>
+            <div class="type-weights">
+              <p style="font-weight:100">Thin</p><p style="font-weight:100;font-style:italic">Thin Italics</p>
+              <p style="font-weight:300">Light</p><p style="font-weight:300;font-style:italic">Light Italics</p>
+              <p style="font-weight:400">Book</p><p style="font-weight:400;font-style:italic">Book Italics</p>
+              <p style="font-weight:500">Regular</p><p style="font-weight:500;font-style:italic">Regular Italics</p>
+              <p style="font-weight:600">DemiBold</p><p style="font-weight:600;font-style:italic">DemiBold Italics</p>
+              <p style="font-weight:700">Bold</p><p style="font-weight:700;font-style:italic">Bold Italics</p>
+              <p style="font-weight:800">Heavy</p><p style="font-weight:800;font-style:italic">Heavy Italics</p>
+              <p style="font-weight:900">Black</p><p style="font-weight:900;font-style:italic">Black Italics</p>
+            </div>
+          </div>
+
+          <div class="type-family" style="font-family:var(--font-slab)">
+            <div class="type-family-head">
+              <h3 class="ui-title-2">Museo Slab</h3>
+              <p class="ui-body">Titles and major headings</p>
+            </div>
+            <div class="type-weights">
+              <p style="font-weight:100">100</p><p style="font-weight:100;font-style:italic">100 Italics</p>
+              <p style="font-weight:300">300</p><p style="font-weight:300;font-style:italic">300 Italics</p>
+              <p style="font-weight:500">500</p><p style="font-weight:500;font-style:italic">500 Italics</p>
+              <p style="font-weight:700">700</p><p style="font-weight:700;font-style:italic">700 Italics</p>
+              <p style="font-weight:900">900</p><p style="font-weight:900;font-style:italic">900 Italics</p>
+              <p style="font-weight:900">1000</p><p style="font-weight:900;font-style:italic">1000 Italics</p>
+            </div>
+          </div>
+
+          <div class="type-family" style="font-family:var(--font-email)">
+            <div class="type-family-head">
+              <h3 class="ui-title-2">Aptos</h3>
+              <p class="ui-body">Email only</p>
+            </div>
+            <div class="type-weights">
+              <p style="font-weight:300">Light</p><p style="font-weight:300;font-style:italic">Light Italics</p>
+              <p style="font-weight:400">Regular</p><p style="font-weight:400;font-style:italic">Regular Italics</p>
+              <p style="font-weight:600">SemiBold</p><p style="font-weight:600;font-style:italic">SemiBold Italics</p>
+              <p style="font-weight:700">Bold</p><p style="font-weight:700;font-style:italic">Bold Italics</p>
+              <p style="font-weight:800">ExtraBold</p><p style="font-weight:800;font-style:italic">ExtraBold Italics</p>
+              <p style="font-weight:900">Black</p><p style="font-weight:900;font-style:italic">Black Italics</p>
+            </div>
+            <p class="ui-body" style="font-size:11pt;line-height:15pt">Aptos 11pt is the typeface for email correspondence.</p>
+          </div>
+
+          <div class="specimen">
+            <p class="spec-label ui-caption-1">Titles in Museo Slab. Headings and body in Dupla. This preview stands in until those licensed faces are installed.</p>
+            <p class="ed-display" style="color:var(--brand)"><span style="font-weight:500;display:block">Your school’s</span>performance partners</p>
+            <p class="ed-lead" style="margin-top:16px;max-width:36ch">Optimising how you attract, enrol, and retain students, staff, and alumni.</p>
+            <p class="ed-body" style="margin-top:16px;max-width:62ch">As the leader of marketing in your school, you face communication and competitive challenges. Standing out is more important than ever.</p>
+            <p class="ed-accent" style="margin-top:8px">insight</p>
+          </div>
+
+          <div class="specimen" style="overflow:auto">
+            <table class="spec-table">
+              <thead>
+                <tr><th>Style</th><th>Family</th><th>Weight</th><th>Size</th><th>Leading</th><th>Tracking</th><th></th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Display</td><td>Museo Slab</td><td>800</td><td>64</td><td>64</td><td>−0.64</td><td class="sample ed-display" style="font-size:32px;line-height:32px">Partners</td></tr>
+                <tr><td>Title</td><td>Museo Slab</td><td>600</td><td>40</td><td>44</td><td>−0.40</td><td class="sample ed-title" style="font-size:28px;line-height:32px">Why change</td></tr>
+                <tr><td>Title small</td><td>Museo Slab</td><td>700</td><td>24</td><td>30</td><td>−0.24</td><td class="sample ed-title-s">Global programs</td></tr>
+                <tr><td>Lead</td><td>Dupla</td><td>500</td><td>24</td><td>36</td><td>−0.20</td><td class="sample ed-lead" style="font-size:20px;line-height:28px">A clear next step</td></tr>
+                <tr><td>Body</td><td>Dupla</td><td>400</td><td>18</td><td>27</td><td>0</td><td class="sample ed-body">Insight applied</td></tr>
+                <tr><td>Body strong</td><td>Dupla</td><td>700</td><td>18</td><td>27</td><td>0</td><td class="sample ed-strong">Standing out matters</td></tr>
+                <tr><td>Caption</td><td>Dupla</td><td>600</td><td>13</td><td>18</td><td>−0.08</td><td class="sample ed-caption">Schedule a meeting</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="specimen" style="overflow:auto">
+            <p class="spec-label ui-caption-1">Interface · Dupla, for apps and dense UI</p>
+            <table class="spec-table">
+              <thead>
+                <tr><th>Style</th><th>Weight</th><th>Size</th><th>Leading</th><th>Tracking</th><th></th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Large title</td><td>400</td><td>34</td><td>41</td><td>+0.37</td><td class="sample ui-large-title">Overview</td></tr>
+                <tr><td>Title 1</td><td>400</td><td>28</td><td>34</td><td>+0.36</td><td class="sample ui-title-1">Schools</td></tr>
+                <tr><td>Title 2</td><td>400</td><td>22</td><td>28</td><td>+0.35</td><td class="sample ui-title-2">Projects</td></tr>
+                <tr><td>Title 3</td><td>400</td><td>20</td><td>25</td><td>+0.38</td><td class="sample ui-title-3">This quarter</td></tr>
+                <tr><td>Headline</td><td>600</td><td>17</td><td>22</td><td>−0.41</td><td class="sample ui-headline">Active work</td></tr>
+                <tr><td>Body</td><td>400</td><td>17</td><td>22</td><td>−0.41</td><td class="sample ui-body">Reading size inside tools</td></tr>
+                <tr><td>Callout</td><td>400</td><td>16</td><td>21</td><td>−0.32</td><td class="sample ui-callout">Field text and buttons</td></tr>
+                <tr><td>Subhead</td><td>400</td><td>15</td><td>20</td><td>−0.24</td><td class="sample ui-subhead">Secondary line</td></tr>
+                <tr><td>Footnote</td><td>400</td><td>13</td><td>18</td><td>−0.08</td><td class="sample ui-footnote">Helper under a field</td></tr>
+                <tr><td>Caption 1</td><td>400</td><td>12</td><td>16</td><td>0</td><td class="sample ui-caption-1">Table header</td></tr>
+                <tr><td>Caption 2</td><td>400</td><td>11</td><td>13</td><td>+0.07</td><td class="sample ui-caption-2">Meta</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section" id="space">
+          <p class="kicker ed-caption">03 — Space</p>
+          <h2 class="ed-title">A 4-point grid. Padding uses the same numbers.</h2>
+          <p class="lede ed-body">The layout rhythm is a 4-point grid with an 8-point step. Every gap, inset, and control height on an imageseven screen comes from that scale. If a measurement is not in the scale, it does not ship. Controls are 44 points tall.</p>
+          <div class="specimen">
+            <p class="spec-label ui-caption-1">The scale, drawn at true size</p>
+            <div class="space-squares">
+              <div class="space-sq"><i style="--w:4px"></i><span class="ui-caption-2">4</span></div>
+              <div class="space-sq"><i style="--w:8px"></i><span class="ui-caption-2">8</span></div>
+              <div class="space-sq"><i style="--w:12px"></i><span class="ui-caption-2">12</span></div>
+              <div class="space-sq"><i style="--w:16px"></i><span class="ui-caption-2">16</span></div>
+              <div class="space-sq"><i style="--w:20px"></i><span class="ui-caption-2">20</span></div>
+              <div class="space-sq"><i style="--w:24px"></i><span class="ui-caption-2">24</span></div>
+              <div class="space-sq"><i style="--w:32px"></i><span class="ui-caption-2">32</span></div>
+              <div class="space-sq"><i style="--w:40px"></i><span class="ui-caption-2">40</span></div>
+              <div class="space-sq"><i style="--w:48px"></i><span class="ui-caption-2">48</span></div>
+              <div class="space-sq"><i style="--w:64px"></i><span class="ui-caption-2">64</span></div>
+              <div class="space-sq"><i style="--w:80px"></i><span class="ui-caption-2">80</span></div>
+            </div>
+            <div class="space-scale" style="margin-top:24px">
+              <div class="space-row"><span class="ui-footnote">2</span><i class="space-bar" style="--w:2px"></i><span class="ui-caption-1">nudge</span></div>
+              <div class="space-row"><span class="ui-footnote">96</span><i class="space-bar" style="--w:96px"></i><span class="ui-caption-1">hero</span></div>
+              <div class="space-row"><span class="ui-footnote">128</span><i class="space-bar" style="--w:128px"></i><span class="ui-caption-1">break</span></div>
+            </div>
+          </div>
+
+          <h3 class="ui-title-3" style="margin-top:40px">Gaps</h3>
+          <p class="lede ed-body">The tinted block is the space. Its height or width is the token.</p>
+          <div class="grid-2" style="margin-top:16px">
+            <div class="card stack stack-16">
+              <p class="spec-label ui-caption-1">Icon to label · 8</p>
+              <div class="cluster" style="gap:0;align-items:center">
+                <span class="cmd-ico">Sc</span>
+                <span class="gap-chip" style="width:8px;height:32px">8</span>
+                <span class="ui-headline">Schools</span>
+              </div>
+              <p class="spec-label ui-caption-1">Tight stack · 8</p>
+              <div>
+                <p class="ui-headline">Rangeview</p>
+                <div class="gap-chip" style="height:8px;width:100%;margin:0">8</div>
+                <p class="ui-footnote" style="color:var(--muted)">Narrative in review</p>
+              </div>
+            </div>
+            <div class="card stack stack-16">
+              <p class="spec-label ui-caption-1">Default stack · 16</p>
+              <div>
+                <p class="ui-title-3">This quarter</p>
+                <div class="gap-chip" style="height:16px;width:100%">16</div>
+                <p class="ui-body">Six projects are in review. Two are waiting on the school.</p>
+              </div>
+              <p class="spec-label ui-caption-1">Related group · 24</p>
+              <div>
+                <p class="ui-headline">Studio</p>
+                <div class="gap-chip" style="height:24px;width:100%">24</div>
+                <p class="ui-body">People, schools, and the work between them.</p>
+              </div>
+            </div>
+            <div class="card">
+              <p class="spec-label ui-caption-1">Inside a section · 32 then 40</p>
+              <p class="ui-headline">Overview</p>
+              <div class="gap-chip" style="height:32px;width:100%;margin-top:0">32</div>
+              <div class="grid-2">
+                <article class="kpi"><p class="ui-caption-1" style="color:var(--muted)">Schools</p><p class="metric">42</p></article>
+                <article class="kpi"><p class="ui-caption-1" style="color:var(--muted)">Projects</p><p class="metric">17</p></article>
+              </div>
+              <div class="gap-chip" style="height:40px;width:100%">40</div>
+              <p class="ui-body">The next block on the same page starts after 40, not after a new section.</p>
+            </div>
+            <div class="card">
+              <p class="spec-label ui-caption-1">Section padding · 64</p>
+              <div class="gap-chip" style="height:64px;width:100%">64</div>
+              <p class="ui-body">A new section starts with 64 above the title. A large break between stories is 80, 96, or 128.</p>
+              <div class="gap-chip" style="height:16px;width:100%">16</div>
+              <p class="ui-footnote" style="color:var(--muted)">Paragraphs inside that section stay at 16.</p>
+            </div>
+          </div>
+
+          <h3 class="ui-title-3" style="margin-top:40px">Insets</h3>
+          <p class="lede ed-body">The dashed field is the padding. The solid box is the content.</p>
+          <div class="pad-grid" style="margin-top:16px">
+            <div>
+              <p class="spec-label ui-caption-1">Button · 12 × 20</p>
+              <div class="inset-ex" style="padding:12px 20px"><div class="inset-core"><span class="ui-caption-1">Save changes</span></div></div>
+            </div>
+            <div>
+              <p class="spec-label ui-caption-1">Field · 12 × 16</p>
+              <div class="inset-ex" style="padding:12px 16px"><div class="inset-core"><span class="ui-caption-1">Rangeview</span></div></div>
+            </div>
+            <div>
+              <p class="spec-label ui-caption-1">Nav item · 12 × 16</p>
+              <div class="inset-ex" style="padding:12px 16px"><div class="inset-core"><span class="ui-caption-1">Projects</span></div></div>
+            </div>
+            <div>
+              <p class="spec-label ui-caption-1">Table cell · 12 × 16</p>
+              <div class="inset-ex" style="padding:12px 16px"><div class="inset-core"><span class="ui-caption-1">On track</span></div></div>
+            </div>
+            <div>
+              <p class="spec-label ui-caption-1">Card · 24</p>
+              <div class="inset-ex" style="padding:24px"><div class="inset-core"><span class="ui-caption-1">All sides</span></div></div>
+            </div>
+            <div>
+              <p class="spec-label ui-caption-1">Panel · 48</p>
+              <div class="inset-ex" style="padding:48px"><div class="inset-core"><span class="ui-caption-1">Brand band</span></div></div>
+            </div>
+            <div>
+              <p class="spec-label ui-caption-1">Page, small · 24</p>
+              <div class="inset-ex" style="padding:24px"><div class="inset-core"><span class="ui-caption-1">Screen edge</span></div></div>
+            </div>
+            <div>
+              <p class="spec-label ui-caption-1">Page, tablet · 40</p>
+              <div class="inset-ex" style="padding:40px"><div class="inset-core"><span class="ui-caption-1">Screen edge</span></div></div>
+            </div>
+          </div>
+
+          <h3 class="ui-title-3" style="margin-top:40px">One card, several steps</h3>
+          <div class="grid-2" style="margin-top:16px">
+            <div class="inset-ex" style="padding:24px">
+              <div class="card" style="padding:0">
+                <div class="cluster" style="gap:0;align-items:center">
+                  <span class="cmd-ico">Rv</span>
+                  <span class="gap-chip" style="width:8px;height:32px">8</span>
+                  <span class="ui-headline">Rangeview</span>
+                </div>
+                <div class="gap-chip" style="height:12px;width:100%">12</div>
+                <p class="ui-body">Narrative is with the school. The next move is a review, not a new brief.</p>
+                <div class="gap-chip" style="height:16px;width:100%">16</div>
+                <div><span class="btn btn-sm">Open project</span></div>
+              </div>
+              <p class="ui-caption-2" style="margin-top:8px;color:var(--brand-deep)">Card padding around this block is 24.</p>
+            </div>
+            <div class="hero-space">
+              <span class="gap-chip" style="height:24px;color:#fff;background:rgba(255,255,255,.16)">24 inside the frame</span>
+              <span class="gap-chip" style="height:64px;color:#fff;background:rgba(255,255,255,.16)">64 before the headline</span>
+              <p class="ed-title-s" style="color:var(--brand)">Performance partners</p>
+            </div>
+          </div>
+
+          <h3 class="ui-title-3" style="margin-top:40px">Page grid</h3>
+          <p class="lede ed-body">Twelve columns. The gutter is 24, the same number as card padding. Content stops at 1160. A control is 44 tall. A dense control, such as a page number, is 32.</p>
+          <div class="specimen" style="margin-top:16px">
+            <div class="col-grid" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="cluster" style="margin-top:16px">
+              <span class="gap-chip" style="width:44px;height:44px">44</span>
+              <span class="ui-footnote">Primary control</span>
+              <span class="gap-chip" style="width:32px;height:32px">32</span>
+              <span class="ui-footnote">Dense control</span>
+              <span class="gap-chip" style="width:24px;height:24px">24</span>
+              <span class="ui-footnote">Gutter</span>
+            </div>
+          </div>
+          <p class="note ui-footnote" style="margin-top:16px">Radius follows the same restraint: 0 for gold labels, 10 for controls, cards, and the nav, 16 for sheets, 30 for large brand panels.</p>
+        </section>
+
+        <section class="section" id="actions">
+          <p class="kicker ed-caption">04 — Actions</p>
+          <h2 class="ed-title">Buttons, links, and labels.</h2>
+          <p class="lede ed-body">Marketing actions are lowercase and extra bold, matching the site. Product actions are sentence case. Gold labels are square. One primary action per view.</p>
+          <div class="specimen stack stack-24">
+            <div class="cluster">
+              <button class="btn btn-brand" type="button">schedule a meeting</button>
+              <button class="btn" type="button">Save changes</button>
+              <button class="btn btn-outline" type="button">Cancel</button>
+              <button class="btn btn-ghost" type="button">learn more</button>
+              <button class="btn btn-danger" type="button">Remove</button>
+              <button class="btn" type="button" disabled>Disabled</button>
+            </div>
+            <div class="cluster">
+              <span class="badge badge-gold">Global programs</span>
+              <span class="badge badge-brand">New</span>
+              <span class="badge badge-line">Draft</span>
+              <span class="badge badge-ok badge-round">On track</span>
+              <span class="badge badge-warn badge-round">In review</span>
+              <span class="badge badge-bad badge-round">Blocked</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="navigation">
+          <p class="kicker ed-caption">05 — Navigation</p>
+          <h2 class="ed-title">A blue bar, then a quiet footer.</h2>
+          <div class="specimen specimen-flush">
+            <div style="padding:24px;background:var(--hero)">
+              <div class="m-nav">
+                <a class="wordmark" href="#overview"><img src="logo.png" alt="imageseven"></a>
+                <button class="m-burger" type="button" aria-expanded="false">menu</button>
+                <nav class="m-links" aria-label="Sample">
+                  <div class="menu" data-menu>
+                    <button class="linkish" type="button" aria-expanded="false" aria-haspopup="true">services</button>
+                    <div class="menu-pop" hidden>
+                      <a href="#features">guide with strategic insight</a>
+                      <a href="#features">craft your school brand</a>
+                      <a href="#features">deliver consistent performance</a>
+                    </div>
+                  </div>
+                  <a href="#proof">meet the team</a>
+                  <a href="#stories">insights</a>
+                  <a href="#stories">contact</a>
+                </nav>
+                <button class="btn btn-inverse btn-sm" type="button">schedule a meeting</button>
+              </div>
+            </div>
+          </div>
+          <div class="site-footer" style="margin-top:24px">
+            <div class="col">
+              <p class="wordmark"><img src="logo.png" alt="imageseven"></p>
+            </div>
+            <div class="col">
+              <p class="ui-headline" style="color:white">Services</p>
+              <a class="ui-callout" href="#features">Strategic insight</a>
+              <a class="ui-callout" href="#features">School brand</a>
+              <a class="ui-callout" href="#features">Performance</a>
+            </div>
+            <div class="col">
+              <p class="ui-headline" style="color:white">Insights</p>
+              <a class="ui-callout" href="#stories">Journal</a>
+              <a class="ui-callout" href="#stories">Podcast</a>
+              <a class="ui-callout" href="#stories">Notes</a>
+            </div>
+            <div class="col">
+              <p class="ui-headline" style="color:white">Contact</p>
+              <p class="ui-callout">1300 301 995</p>
+              <a class="ui-callout" href="mailto:hello@imageseven.com.au">hello@imageseven.com.au</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="hero">
+          <p class="kicker ed-caption">06 — Hero and content</p>
+          <h2 class="ed-title">Photography, a slab headline, a plain lede.</h2>
+          <div class="specimen specimen-flush">
+            <div class="hero">
+              <div class="m-nav">
+                <span class="wordmark"><img src="logo.png" alt="imageseven"></span>
+                <button class="m-burger" type="button" aria-expanded="false">menu</button>
+                <nav class="m-links" aria-label="Hero">
+                  <a href="#features">services</a>
+                  <a href="#proof">meet the team</a>
+                  <a href="#stories">insights</a>
+                  <a href="#stories">contact</a>
+                </nav>
+                <button class="btn btn-inverse btn-sm" type="button">schedule a meeting</button>
+              </div>
+              <div class="hero-copy">
+                <h3 class="ed-display hero-title"><span class="quiet">Your school’s</span>performance partners</h3>
+                <p class="ed-lead">Optimising how you attract, enrol, and retain students, staff, and alumni to maximise your school’s impact.</p>
+              </div>
+            </div>
+          </div>
+          <div class="specimen" style="margin-top:16px">
+            <div class="split">
+              <p class="ed-strong">As your performance partners, imageseven works alongside you so the school thrives. Guiding decisions, crafting a distinctive brand, and delivering measurable results.</p>
+              <p class="ed-body" style="color:var(--slate)">Legacy methods are not keeping pace. Heads and their teams are working harder with systems that were designed for a world that no longer exists. There is room for real progress.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="features">
+          <p class="kicker ed-caption">07 — Features, stats, steps</p>
+          <h2 class="ed-title">How the work shows up on a page.</h2>
+          <div class="specimen stack stack-32">
+            <div class="cluster"><span class="badge badge-gold">Global programs</span></div>
+            <div class="grid-2">
+              <h3 class="ed-title">Engage with us for 3 reasons</h3>
+              <article class="card card-mist stack stack-12">
+                <h4 class="ed-title-s">Guide <span class="ed-accent" style="font-size:40px;line-height:40px">your</span> success with strategic insight.</h4>
+                <p class="ed-body" style="color:var(--slate)">Gain clarity and direction with strategies shaped around the school.</p>
+                <div><button class="btn btn-brand btn-sm" type="button">learn more</button></div>
+              </article>
+            </div>
+            <div class="grid-3">
+              <article class="card card-mist stack stack-8">
+                <h4 class="ed-title-s">Brand</h4>
+                <p class="ui-body" style="color:var(--slate)">A distinctive position people can recognise and repeat.</p>
+              </article>
+              <article class="card card-mist stack stack-8">
+                <h4 class="ed-title-s">Enrolment</h4>
+                <p class="ui-body" style="color:var(--slate)">A path from first interest to a confident yes.</p>
+              </article>
+              <article class="card card-mist stack stack-8">
+                <h4 class="ed-title-s">Performance</h4>
+                <p class="ui-body" style="color:var(--slate)">Consistent delivery after the strategy is set.</p>
+              </article>
+            </div>
+            <div class="grid-4">
+              <article><p class="ed-stat stat-num">38</p><p class="ed-caption">years with school heads</p></article>
+              <article><p class="ed-stat stat-num">185</p><p class="ed-caption">education clients</p></article>
+              <article><p class="ed-stat stat-num">8k</p><p class="ed-caption">projects completed</p></article>
+              <article><p class="ed-stat stat-num">38</p><p class="ed-caption">professionals</p></article>
+            </div>
+            <div class="card-brand stack stack-24">
+              <h3 class="ed-title">Three moves, in order.</h3>
+              <div class="steps">
+                <div class="step"><div class="step-n">1</div><div><p class="ui-headline" style="color:white">Start the conversation</p><p class="ui-body" style="color:white">When the timing is right, map the real constraints.</p></div></div>
+                <div class="step"><div class="step-n">2</div><div><p class="ui-headline" style="color:white">Design the action plan</p><p class="ui-body" style="color:white">A plan the team can run, measure, and explain.</p></div></div>
+                <div class="step"><div class="step-n">3</div><div><p class="ui-headline" style="color:white">Achieve the goals</p><p class="ui-body" style="color:white">Stay with the work until the result is visible.</p></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="proof">
+          <p class="kicker ed-caption">08 — Proof</p>
+          <h2 class="ed-title">Testimonials, team, and marks.</h2>
+          <div class="specimen stack stack-32">
+            <figure class="quote">
+              <blockquote class="ed-lead">They treated the brand as a management tool, not a campaign.</blockquote>
+              <figcaption class="person">
+                <span class="avatar">RC</span>
+                <span><strong class="ui-headline">School leader</strong><br><span class="ui-footnote" style="color:var(--muted)">Independent school, sample</span></span>
+              </figcaption>
+            </figure>
+            <div class="people">
+              <article><div class="ph"></div><p class="ui-headline">Alex Morgan</p><p class="ui-footnote" style="color:var(--muted)">Strategy</p></article>
+              <article><div class="ph"></div><p class="ui-headline">Jordan Lee</p><p class="ui-footnote" style="color:var(--muted)">Brand</p></article>
+              <article><div class="ph"></div><p class="ui-headline">Sam Patel</p><p class="ui-footnote" style="color:var(--muted)">Performance</p></article>
+              <article><div class="ph"></div><p class="ui-headline">Riley Chen</p><p class="ui-footnote" style="color:var(--muted)">Insight</p></article>
+            </div>
+            <div class="logo-row" aria-label="Partner marks">
+              <div class="logo-pill">Northshore</div>
+              <div class="logo-pill">Harbour</div>
+              <div class="logo-pill">Westfield College</div>
+              <div class="logo-pill">Rangeview</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="convert">
+          <p class="kicker ed-caption">09 — Convert</p>
+          <h2 class="ed-title">Engagements, questions, and a next step.</h2>
+          <p class="lede ed-body">Service engagements, not a shop. No carts, catalogues, or checkout.</p>
+          <div class="grid-3" style="margin-top:32px">
+            <article class="card price">
+              <span class="badge badge-line">Insight</span>
+              <p class="fee">Brief</p>
+              <p class="ui-body" style="color:var(--slate)">A focused read of where the school stands.</p>
+              <ul class="ui-callout"><li>Stakeholder sessions</li><li>Position review</li><li>A written brief</li></ul>
+              <button class="btn btn-outline" type="button">Talk it through</button>
+            </article>
+            <article class="card price price-mark">
+              <span class="badge badge-gold">Brand</span>
+              <p class="fee">Program</p>
+              <p class="ui-body" style="color:var(--slate)">The core engagement for identity and message.</p>
+              <ul class="ui-callout"><li>Strategy and narrative</li><li>Identity system</li><li>Launch guidance</li></ul>
+              <button class="btn btn-brand" type="button">start a program</button>
+            </article>
+            <article class="card price">
+              <span class="badge badge-line">Performance</span>
+              <p class="fee">Partner</p>
+              <p class="ui-body" style="color:var(--slate)">Ongoing work beside the in-school team.</p>
+              <ul class="ui-callout"><li>Campaign rhythm</li><li>Reporting</li><li>A named partner</li></ul>
+              <button class="btn btn-outline" type="button">Talk it through</button>
+            </article>
+          </div>
+          <div class="specimen faq" style="margin-top:16px">
+            <details open>
+              <summary>When should a school start?</summary>
+              <p class="ed-body">When the current story no longer matches the experience families have. Timing beats a fixed calendar.</p>
+            </details>
+            <details>
+              <summary>Do you replace the in-school team?</summary>
+              <p class="ed-body">No. The work sits beside the people who already carry the school.</p>
+            </details>
+            <details>
+              <summary>What does the first conversation cover?</summary>
+              <p class="ed-body">Constraints, goals, and whether there is a fit. It is a working session, not a pitch deck.</p>
+            </details>
+          </div>
+          <div class="cta stack stack-16" style="margin-top:16px">
+            <h3 class="ed-title">Ready to maximise your school’s impact?</h3>
+            <p class="ed-lead">Let’s start a conversation.</p>
+            <div><button class="btn btn-inverse" type="button">contact us</button></div>
+          </div>
+          <div class="news" style="margin-top:16px">
+            <h3 class="ed-title-s">Sign up for the e-newsletter</h3>
+            <form class="news-row" action="#" onsubmit="return false">
+              <label class="ui-caption-1" for="news-email" style="position:absolute;left:-999px">Email</label>
+              <input class="input" id="news-email" type="email" placeholder="name@school.edu.au" autocomplete="email">
+              <button class="btn btn-inverse" type="submit">get the latest</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="section" id="stories">
+          <p class="kicker ed-caption">10 — Stories and contact</p>
+          <h2 class="ed-title">Journal cards, roles, and a visit.</h2>
+          <div class="stories" style="margin-top:32px">
+            <article class="card story">
+              <div class="ph"></div>
+              <p class="ed-caption" style="color:var(--brand)">Journal</p>
+              <h3 class="ed-title-s">Trust through repeated proof</h3>
+              <p class="ui-body" style="color:var(--slate)">Why short campaigns fade and a steady record does not.</p>
+            </article>
+            <article class="card story">
+              <div class="ph"></div>
+              <p class="ed-caption" style="color:var(--brand)">Podcast</p>
+              <h3 class="ui-headline">Turning strategy into action</h3>
+              <p class="ui-footnote" style="color:var(--muted)">32 min</p>
+            </article>
+            <article class="card story">
+              <div class="ph"></div>
+              <p class="ed-caption" style="color:var(--brand)">Note</p>
+              <h3 class="ui-headline">Short-termism weakens trust</h3>
+              <p class="ui-footnote" style="color:var(--muted)">6 min read</p>
+            </article>
+          </div>
+          <div class="grid-2" style="margin-top:16px">
+            <div class="card">
+              <h3 class="ui-title-3">Open roles</h3>
+              <div class="role"><div><p class="ui-headline">Brand strategist</p><p class="ui-footnote" style="color:var(--muted)">Perth · Full time</p></div><span class="badge badge-line">Studio</span></div>
+              <div class="role"><div><p class="ui-headline">Writer</p><p class="ui-footnote" style="color:var(--muted)">Remote · Contract</p></div><span class="badge badge-line">Insight</span></div>
+            </div>
+            <form class="card stack stack-16" action="#" onsubmit="return false">
+              <h3 class="ui-title-3">Contact</h3>
+              <div class="field"><label class="lbl" for="c-name">Name</label><input class="input" id="c-name" autocomplete="name"></div>
+              <div class="field"><label class="lbl" for="c-email">Email</label><input class="input" id="c-email" type="email" autocomplete="email"></div>
+              <div class="field"><label class="lbl" for="c-note">How can we help?</label><textarea class="textarea" id="c-note"></textarea></div>
+              <button class="btn btn-brand" type="submit">send</button>
+            </form>
+          </div>
+          <div class="banner" style="margin-top:16px">
+            <p class="ui-headline">We use a few cookies to understand which essays get read.</p>
+            <div class="cluster"><button class="btn btn-sm" type="button" style="background:#333;color:#fff">Accept</button><button class="btn btn-outline btn-sm" type="button" style="background:#fff">Decline</button></div>
+          </div>
+        </section>
+
+        <section class="section" id="application">
+          <p class="kicker ed-caption">11 — Application</p>
+          <h2 class="ed-title">A studio shell, not a storefront.</h2>
+          <p class="lede ed-body">Sidebar, top bar, metrics, a chart, filters, tabs, and a table. Built for client work: schools, projects, people.</p>
+          <div class="specimen specimen-flush" style="margin-top:32px">
+            <div class="app">
+              <aside class="app-side">
+                <p class="wordmark" style="padding:0 12px 12px"><img src="logo.png" alt="imageseven"></p>
+                <button class="app-link is-on" type="button">Overview</button>
+                <button class="app-link" type="button">Schools</button>
+                <button class="app-link" type="button">Projects</button>
+                <button class="app-link" type="button">Calendar</button>
+                <button class="app-link" type="button">People</button>
+              </aside>
+              <div class="app-main">
+                <div class="app-top">
+                  <div>
+                    <div class="crumbs ui-footnote"><a href="#application">Studio</a><span>/</span><span>Overview</span></div>
+                    <h3 class="ui-title-1">This quarter</h3>
+                  </div>
+                  <div class="cluster">
+                    <input class="input" style="width:200px" type="search" placeholder="Search schools" aria-label="Search schools">
+                    <button class="btn btn-sm" type="button">New project</button>
+                  </div>
+                </div>
+                <div class="grid-4">
+                  <article class="kpi"><p class="ui-caption-1" style="color:var(--muted)">Active schools</p><p class="metric">42</p><p class="ui-footnote delta-up">+3 this quarter</p></article>
+                  <article class="kpi"><p class="ui-caption-1" style="color:var(--muted)">Open projects</p><p class="metric">17</p><p class="ui-footnote">6 in review</p></article>
+                  <article class="kpi"><p class="ui-caption-1" style="color:var(--muted)">Meetings</p><p class="metric">9</p><p class="ui-footnote">Next is Thursday</p></article>
+                  <article class="kpi"><p class="ui-caption-1" style="color:var(--muted)">Waiting on us</p><p class="metric">4</p><p class="ui-footnote delta-down">2 overdue</p></article>
+                </div>
+                <div class="grid-2">
+                  <div class="chart">
+                    <p class="ui-headline">Enquiry trend</p>
+                    <svg viewBox="0 0 320 120" aria-hidden="true">
+                      <polyline points="8,90 48,80 88,84 128,60 168,64 208,40 248,46 312,22"></polyline>
+                    </svg>
+                    <div class="bars">
+                      <div class="bar-row"><span class="ui-caption-1">Insight</span><div class="bar-track"><div class="bar-fill" style="--w:72%"></div></div><span class="ui-caption-1">72</span></div>
+                      <div class="bar-row"><span class="ui-caption-1">Brand</span><div class="bar-track"><div class="bar-fill" style="--w:54%"></div></div><span class="ui-caption-1">54</span></div>
+                      <div class="bar-row"><span class="ui-caption-1">Partner</span><div class="bar-track"><div class="bar-fill" style="--w:36%"></div></div><span class="ui-caption-1">36</span></div>
+                    </div>
+                  </div>
+                  <div class="stack stack-12">
+                    <div class="cluster">
+                      <button class="chip is-on" type="button" aria-pressed="true">All</button>
+                      <button class="chip" type="button" aria-pressed="false">Brand</button>
+                      <button class="chip" type="button" aria-pressed="false">Waiting</button>
+                    </div>
+                    <div data-tabs>
+                      <div class="tabs" role="tablist">
+                        <button class="tab" type="button" role="tab" aria-selected="true" data-tab="pipe">Pipeline</button>
+                        <button class="tab" type="button" role="tab" aria-selected="false" data-tab="people">People</button>
+                      </div>
+                      <div role="tabpanel" data-panel="pipe">
+                        <div class="table-wrap" style="border-radius:0 0 10px 10px;border-top:0">
+                          <table class="data">
+                            <thead><tr><th>School</th><th>Work</th><th>Owner</th><th>Status</th></tr></thead>
+                            <tbody>
+                              <tr><td>Rangeview</td><td>Narrative</td><td>Jordan</td><td><span class="badge badge-ok badge-round">On track</span></td></tr>
+                              <tr><td>Harbour</td><td>Identity</td><td>Sam</td><td><span class="badge badge-warn badge-round">In review</span></td></tr>
+                              <tr><td>Northshore</td><td>Enrolment</td><td>Alex</td><td><span class="badge badge-bad badge-round">Blocked</span></td></tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div role="tabpanel" data-panel="people" hidden>
+                        <div class="user"><span class="avatar">AM</span><div><p class="ui-headline">Alex Morgan</p><p class="ui-footnote" style="color:var(--muted)">Strategy · 6 schools</p></div></div>
+                        <div class="user"><span class="avatar">JL</span><div><p class="ui-headline">Jordan Lee</p><p class="ui-footnote" style="color:var(--muted)">Brand · 4 schools</p></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cluster" style="justify-content:space-between">
+                  <p class="ui-footnote" style="color:var(--muted)">Showing 3 of 17</p>
+                  <div class="pager">
+                    <button type="button" aria-label="Previous">‹</button>
+                    <button type="button" aria-current="page">1</button>
+                    <button type="button">2</button>
+                    <button type="button">3</button>
+                    <button type="button" aria-label="Next">›</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="forms">
+          <p class="kicker ed-caption">12 — Forms</p>
+          <h2 class="ed-title">Fields at 44, labels at footnote.</h2>
+          <div class="specimen">
+            <div class="grid-2">
+              <div class="stack stack-16">
+                <div class="field">
+                  <label class="lbl" for="f-school">School</label>
+                  <input class="input" id="f-school" value="Rangeview College">
+                </div>
+                <div class="field">
+                  <label class="lbl" for="f-stage">Stage</label>
+                  <select class="select" id="f-stage"><option>Discovery</option><option>In review</option></select>
+                </div>
+                <div class="field">
+                  <label class="lbl" for="f-when">Start date</label>
+                  <input class="input is-invalid" id="f-when" value="32/13/2026" aria-invalid="true" aria-describedby="f-when-err">
+                  <p class="err ui-footnote" id="f-when-err">Use a real date, day first.</p>
+                </div>
+                <div class="field">
+                  <label class="lbl" for="f-off">Archived note</label>
+                  <input class="input" id="f-off" disabled value="Closed in March">
+                </div>
+              </div>
+              <div class="stack stack-16">
+                <div class="segment" data-segment role="tablist" aria-label="Range">
+                  <button type="button" aria-selected="true">Month</button>
+                  <button type="button" aria-selected="false">Quarter</button>
+                  <button type="button" aria-selected="false">Year</button>
+                </div>
+                <label class="choice"><input type="checkbox" checked> Send the summary to the school</label>
+                <fieldset class="radio-group">
+                  <legend class="lbl">Fit</legend>
+                  <div class="radio-options">
+                    <label class="radio"><input type="radio" name="fit" checked><span class="radio-mark"></span><span class="radio-label">We are a fit</span></label>
+                    <label class="radio"><input type="radio" name="fit"><span class="radio-mark"></span><span class="radio-label">Not this round</span></label>
+                  </div>
+                </fieldset>
+                <div class="switch-row">
+                  <span class="ui-callout">Email the head after each milestone</span>
+                  <button class="switch" type="button" aria-pressed="true" aria-label="Email the head"></button>
+                </div>
+                <div class="field">
+                  <label class="lbl" for="f-note">Internal note</label>
+                  <textarea class="textarea" id="f-note">Hold the identity work until the narrative is signed.</textarea>
+                  <p class="help ui-footnote">Visible to the studio only.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="commands">
+          <p class="kicker ed-caption">13 — Command menus</p>
+          <h2 class="ed-title">Find a person, an action, or a tool.</h2>
+          <p class="lede ed-body">One menu family for products. A full palette for jumping around the studio, stacked rows when a line needs a second sentence, people lists for assigning work, and smaller menus for a person or a connection. Search filters the list. No results leave the empty state.</p>
+          <div class="cluster" style="margin-top:24px">
+            <button class="btn" type="button" data-open-cmd>Open command menu</button>
+            <p class="ui-footnote" style="color:var(--muted)">or press <kbd class="kbd">⌘K</kbd></p>
+          </div>
+
+          <div class="grid-2" style="margin-top:24px">
+            <div>
+              <p class="spec-label ui-caption-1">Actions</p>
+              <div class="cmd" data-cmd>
+                <label class="cmd-search">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  <input type="search" data-cmd-input placeholder="Search actions" aria-label="Search actions">
+                </label>
+                <div class="cmd-list">
+                  <div data-cmd-group>
+                    <p class="cmd-group">Navigate</p>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Schools" data-toast="Opened Schools"><span class="cmd-ico">Sc</span><span>Schools</span><kbd class="kbd cmd-meta">G S</kbd></button>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Projects" data-toast="Opened Projects"><span class="cmd-ico">Pr</span><span>Projects</span><kbd class="kbd cmd-meta">G P</kbd></button>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Calendar" data-toast="Opened Calendar"><span class="cmd-ico">Ca</span><span>Calendar</span><kbd class="kbd cmd-meta">G C</kbd></button>
+                  </div>
+                  <div data-cmd-group>
+                    <p class="cmd-group">Create</p>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="New project" data-toast="New project"><span class="cmd-ico">+</span><span>New project</span><kbd class="kbd cmd-meta">N</kbd></button>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Schedule a meeting" data-toast="Schedule a meeting"><span class="cmd-ico">Me</span><span>Schedule a meeting</span><kbd class="kbd cmd-meta">M</kbd></button>
+                  </div>
+                </div>
+                <p class="cmd-empty" data-cmd-empty hidden>No actions match that search.</p>
+                <div class="cmd-foot"><span><kbd class="kbd">↑↓</kbd> move</span><span><kbd class="kbd">↵</kbd> select</span><span><kbd class="kbd">esc</kbd> close</span></div>
+              </div>
+            </div>
+
+            <div>
+              <p class="spec-label ui-caption-1">Actions stacked</p>
+              <div class="cmd" data-cmd>
+                <label class="cmd-search">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  <input type="search" data-cmd-input placeholder="Search work" aria-label="Search work">
+                </label>
+                <div class="cmd-list">
+                  <div data-cmd-group>
+                    <p class="cmd-group">Recent</p>
+                    <button class="cmd-item is-stack" type="button" data-cmd-item data-label="Open Rangeview narrative" data-toast="Opened Rangeview"><span class="cmd-ico">Rv</span><span class="cmd-copy"><span>Open Rangeview</span><span class="cmd-sub">Narrative is in review</span></span></button>
+                    <button class="cmd-item is-stack" type="button" data-cmd-item data-label="Email the head" data-toast="Draft started"><span class="cmd-ico">Em</span><span class="cmd-copy"><span>Email the head</span><span class="cmd-sub">Send the milestone note</span></span></button>
+                    <button class="cmd-item is-stack" type="button" data-cmd-item data-label="New project" data-toast="New project"><span class="cmd-ico">+</span><span class="cmd-copy"><span>New project</span><span class="cmd-sub">Start work for a school</span></span></button>
+                  </div>
+                </div>
+                <p class="cmd-empty" data-cmd-empty hidden>No work matches that search.</p>
+              </div>
+            </div>
+
+            <div>
+              <p class="spec-label ui-caption-1">Users</p>
+              <div class="cmd" data-cmd>
+                <label class="cmd-search">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  <input type="search" data-cmd-input placeholder="Search people" aria-label="Search people">
+                </label>
+                <div class="cmd-list">
+                  <div data-cmd-group>
+                    <p class="cmd-group">Studio</p>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Alex Morgan Strategy" data-toast="Alex Morgan"><span class="avatar">AM</span><span>Alex Morgan</span><span class="cmd-meta">Strategy</span></button>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Jordan Lee Brand" data-toast="Jordan Lee"><span class="avatar">JL</span><span>Jordan Lee</span><span class="cmd-meta">Brand</span></button>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Sam Patel Performance" data-toast="Sam Patel"><span class="avatar">SP</span><span>Sam Patel</span><span class="cmd-meta">Performance</span></button>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Riley Chen Insight" data-toast="Riley Chen"><span class="avatar">RC</span><span>Riley Chen</span><span class="cmd-meta">Insight</span></button>
+                  </div>
+                </div>
+                <p class="cmd-empty" data-cmd-empty hidden>No one matches that search.</p>
+              </div>
+            </div>
+
+            <div>
+              <p class="spec-label ui-caption-1">Users stacked</p>
+              <div class="cmd" data-cmd>
+                <label class="cmd-search">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  <input type="search" data-cmd-input placeholder="Search by name or email" aria-label="Search by name or email">
+                </label>
+                <div class="cmd-list">
+                  <div data-cmd-group>
+                    <p class="cmd-group">Studio</p>
+                    <button class="cmd-item is-stack" type="button" data-cmd-item data-label="Alex Morgan alex@imageseven.com.au" data-toast="Alex Morgan"><span class="avatar">AM</span><span class="cmd-copy"><span>Alex Morgan</span><span class="cmd-sub">alex@imageseven.com.au</span></span></button>
+                    <button class="cmd-item is-stack" type="button" data-cmd-item data-label="Jordan Lee jordan@imageseven.com.au" data-toast="Jordan Lee"><span class="avatar">JL</span><span class="cmd-copy"><span>Jordan Lee</span><span class="cmd-sub">jordan@imageseven.com.au</span></span></button>
+                    <button class="cmd-item is-stack" type="button" data-cmd-item data-label="Sam Patel sam@imageseven.com.au" data-toast="Sam Patel"><span class="avatar">SP</span><span class="cmd-copy"><span>Sam Patel</span><span class="cmd-sub">sam@imageseven.com.au</span></span></button>
+                  </div>
+                </div>
+                <p class="cmd-empty" data-cmd-empty hidden>No one matches that search.</p>
+              </div>
+            </div>
+
+            <div>
+              <p class="spec-label ui-caption-1">Empty state</p>
+              <div class="cmd">
+                <label class="cmd-search">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  <input type="search" value="enrolment bot" aria-label="Empty search" readonly>
+                </label>
+                <div class="cmd-empty">
+                  <p class="ui-headline">No matches</p>
+                  <p class="ui-footnote" style="color:var(--muted)">Try a school, a person, or an action.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p class="spec-label ui-caption-1">Users menu</p>
+              <div class="cmd cmd-menu" data-cmd>
+                <label class="cmd-search">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  <input type="search" data-cmd-input placeholder="Assign owner" aria-label="Assign owner">
+                </label>
+                <div class="cmd-list">
+                  <div data-cmd-group>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Alex Morgan" data-toast="Owner set to Alex Morgan"><span class="avatar">AM</span><span>Alex Morgan</span></button>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Jordan Lee" data-toast="Owner set to Jordan Lee"><span class="avatar">JL</span><span>Jordan Lee</span><span class="cmd-meta" aria-hidden="true">✓</span></button>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Sam Patel" data-toast="Owner set to Sam Patel"><span class="avatar">SP</span><span>Sam Patel</span></button>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Riley Chen" data-toast="Owner set to Riley Chen"><span class="avatar">RC</span><span>Riley Chen</span></button>
+                  </div>
+                </div>
+                <p class="cmd-empty" data-cmd-empty hidden>No one matches that search.</p>
+              </div>
+            </div>
+
+            <div>
+              <p class="spec-label ui-caption-1">Users menu stacked</p>
+              <div class="cmd cmd-menu" data-cmd>
+                <label class="cmd-search">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  <input type="search" data-cmd-input placeholder="Assign owner" aria-label="Assign owner, with role">
+                </label>
+                <div class="cmd-list">
+                  <div data-cmd-group>
+                    <button class="cmd-item is-stack" type="button" data-cmd-item data-label="Alex Morgan Strategy" data-toast="Owner set to Alex Morgan"><span class="avatar">AM</span><span class="cmd-copy"><span>Alex Morgan</span><span class="cmd-sub">Strategy · 6 schools</span></span></button>
+                    <button class="cmd-item is-stack" type="button" data-cmd-item data-label="Jordan Lee Brand" data-toast="Owner set to Jordan Lee"><span class="avatar">JL</span><span class="cmd-copy"><span>Jordan Lee</span><span class="cmd-sub">Brand · 4 schools</span></span></button>
+                    <button class="cmd-item is-stack" type="button" data-cmd-item data-label="Sam Patel Performance" data-toast="Owner set to Sam Patel"><span class="avatar">SP</span><span class="cmd-copy"><span>Sam Patel</span><span class="cmd-sub">Performance · 3 schools</span></span></button>
+                  </div>
+                </div>
+                <p class="cmd-empty" data-cmd-empty hidden>No one matches that search.</p>
+              </div>
+            </div>
+
+            <div>
+              <p class="spec-label ui-caption-1">Integrations menu</p>
+              <div class="cmd cmd-menu" data-cmd>
+                <label class="cmd-search">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  <input type="search" data-cmd-input placeholder="Connect a tool" aria-label="Connect a tool">
+                </label>
+                <div class="cmd-list">
+                  <div data-cmd-group>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Calendar" data-toast="Calendar already connected"><span class="cmd-ico">Ca</span><span>Calendar</span><span class="badge badge-ok badge-round">Connected</span></button>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Mail" data-toast="Mail already connected"><span class="cmd-ico">Ma</span><span>Mail</span><span class="badge badge-ok badge-round">Connected</span></button>
+                    <button class="cmd-item" type="button" data-cmd-item data-label="Files" data-toast="Connect Files"><span class="cmd-ico">Fi</span><span>Files</span><span class="badge badge-line badge-round">Connect</span></button>
+                  </div>
+                </div>
+                <p class="cmd-empty" data-cmd-empty hidden>No tools match that search.</p>
+              </div>
+            </div>
+
+            <div>
+              <p class="spec-label ui-caption-1">Integrations menu stacked</p>
+              <div class="cmd cmd-menu" data-cmd>
+                <label class="cmd-search">
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  <input type="search" data-cmd-input placeholder="Connect a tool" aria-label="Connect a tool, with detail">
+                </label>
+                <div class="cmd-list">
+                  <div data-cmd-group>
+                    <button class="cmd-item is-stack" type="button" data-cmd-item data-label="Calendar workshops" data-toast="Calendar already connected"><span class="cmd-ico">Ca</span><span class="cmd-copy"><span>Calendar</span><span class="cmd-sub">Workshops and school visits</span></span><span class="badge badge-ok badge-round">On</span></button>
+                    <button class="cmd-item is-stack" type="button" data-cmd-item data-label="Mail milestones" data-toast="Mail already connected"><span class="cmd-ico">Ma</span><span class="cmd-copy"><span>Mail</span><span class="cmd-sub">Milestone notes to heads</span></span><span class="badge badge-ok badge-round">On</span></button>
+                    <button class="cmd-item is-stack" type="button" data-cmd-item data-label="Files briefs" data-toast="Connect Files"><span class="cmd-ico">Fi</span><span class="cmd-copy"><span>Files</span><span class="cmd-sub">Briefs and approved narratives</span></span><span class="badge badge-line badge-round">Add</span></button>
+                  </div>
+                </div>
+                <p class="cmd-empty" data-cmd-empty hidden>No tools match that search.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="dates">
+          <p class="kicker ed-caption">14 — Dates</p>
+          <h2 class="ed-title">Monday first. Day, month, year.</h2>
+          <p class="lede ed-body">Six pickers and the calendars they sit on. Today in these examples is 12 Oct 2026. A day is 36, the field is 44. Past days can be closed. A range can use a preset or two months.</p>
+          <div class="grid-2" style="margin-top:24px">
+            <div class="date" data-date="single" data-value="2026-10-12">
+              <span class="lbl" id="d-board">Board meeting</span>
+              <button class="date-trigger" type="button" data-date-trigger aria-haspopup="dialog" aria-expanded="false" aria-labelledby="d-board">
+                <span data-date-label>12 Oct 2026</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 6.5h12M5 2v2M11 2v2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </button>
+              <div class="date-pop" data-date-body hidden role="dialog" aria-label="Board meeting"></div>
+            </div>
+            <div class="date" data-date="single" data-value="2026-10-15" data-min="2026-10-12">
+              <span class="lbl" id="d-visit">Book a visit</span>
+              <div class="date-tools">
+                <button class="date-trigger" type="button" data-date-trigger aria-haspopup="dialog" aria-expanded="false" aria-labelledby="d-visit">
+                  <span data-date-label>15 Oct 2026</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 6.5h12M5 2v2M11 2v2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </button>
+                <button class="date-clear" type="button" data-date-clear>Clear</button>
+              </div>
+              <p class="help ui-footnote">Days before today are closed.</p>
+              <div class="date-pop" data-date-body hidden role="dialog" aria-label="Book a visit"></div>
+            </div>
+            <div class="date" data-date="single" data-required>
+              <span class="lbl" id="d-need">Start of term</span>
+              <button class="date-trigger is-invalid is-placeholder" type="button" data-date-trigger aria-haspopup="dialog" aria-expanded="false" aria-invalid="true" aria-labelledby="d-need">
+                <span data-date-label>Choose a day</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 6.5h12M5 2v2M11 2v2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </button>
+              <p class="err ui-footnote">Choose the day the work starts.</p>
+              <div class="date-pop" data-date-body hidden role="dialog" aria-label="Start of term"></div>
+            </div>
+            <div>
+              <span class="lbl">Locked date</span>
+              <button class="date-trigger" type="button" disabled>
+                <span>12 Oct 2026</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 6.5h12M5 2v2M11 2v2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="specimen" style="margin-top:24px">
+            <p class="spec-label ui-caption-1">Range, presets, two months</p>
+            <div class="date" data-date="range" data-start="2026-10-06" data-end="2026-10-12" data-static>
+              <span class="lbl" id="d-range">Reporting period</span>
+              <button class="date-trigger" type="button" tabindex="-1">
+                <span data-date-label>6 Oct 2026 – 12 Oct 2026</span>
+              </button>
+              <div class="date-panel" data-date-body></div>
+            </div>
+          </div>
+          <div class="grid-2" style="margin-top:24px">
+            <div class="date" data-date="inline" data-value="2026-10-12" data-events="school" data-static>
+              <p class="spec-label ui-caption-1">Inline month, with the day’s events</p>
+              <div class="date-panel" data-date-body></div>
+              <div class="date-agenda" data-date-agenda></div>
+            </div>
+            <div class="stack stack-16">
+              <div class="date" data-date="month" data-value="2026-10" data-static>
+                <p class="spec-label ui-caption-1">Month picker</p>
+                <button class="date-trigger" type="button" tabindex="-1"><span data-date-label>October 2026</span></button>
+                <div class="date-panel" data-date-body></div>
+              </div>
+              <div class="date" data-date="week" data-value="2026-10-12" data-static>
+                <p class="spec-label ui-caption-1">Week calendar</p>
+                <div class="date-panel" data-date-body></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="choices">
+          <p class="kicker ed-caption">15 — Choices</p>
+          <h2 class="ed-title">Radio buttons and radio groups.</h2>
+          <p class="lede ed-body">One answer in a group. The mark is 20. The row is at least 44. A card group is for a shape of work. A list is for a person. Colour is never the only selected state: the mark fills, and the card outline changes.</p>
+          <div class="grid-2" style="margin-top:24px">
+            <fieldset class="radio-group">
+              <legend class="lbl">Simple group</legend>
+              <div class="radio-options">
+                <label class="radio"><input type="radio" name="channel" checked><span class="radio-mark"></span><span class="radio-label">Email the head</span></label>
+                <label class="radio"><input type="radio" name="channel"><span class="radio-mark"></span><span class="radio-label">Call the office</span></label>
+                <label class="radio"><input type="radio" name="channel"><span class="radio-mark"></span><span class="radio-label">Hold for the workshop</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="radio-group">
+              <legend class="lbl">With a second line</legend>
+              <div class="radio-options">
+                <label class="radio"><input type="radio" name="depth" checked><span class="radio-mark"></span><span class="radio-copy"><span class="radio-label">Narrative</span><span class="radio-help">The story the school tells.</span></span></label>
+                <label class="radio"><input type="radio" name="depth"><span class="radio-mark"></span><span class="radio-copy"><span class="radio-label">Identity</span><span class="radio-help">The look that carries that story.</span></span></label>
+                <label class="radio"><input type="radio" name="depth" disabled><span class="radio-mark"></span><span class="radio-copy"><span class="radio-label">Campaign</span><span class="radio-help">Not open this term.</span></span></label>
+              </div>
+            </fieldset>
+            <fieldset class="radio-group">
+              <legend class="lbl">Horizontal</legend>
+              <div class="radio-options is-row">
+                <label class="radio"><input type="radio" name="when" checked><span class="radio-mark"></span><span class="radio-label">Morning</span></label>
+                <label class="radio"><input type="radio" name="when"><span class="radio-mark"></span><span class="radio-label">Afternoon</span></label>
+                <label class="radio"><input type="radio" name="when"><span class="radio-mark"></span><span class="radio-label">Evening</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="radio-group is-invalid">
+              <legend class="lbl">Needs an answer</legend>
+              <div class="radio-options">
+                <label class="radio"><input type="radio" name="share"><span class="radio-mark"></span><span class="radio-label">Share with the school</span></label>
+                <label class="radio"><input type="radio" name="share"><span class="radio-mark"></span><span class="radio-label">Keep it in the studio</span></label>
+              </div>
+              <p class="err ui-footnote">Choose who can read this note.</p>
+            </fieldset>
+          </div>
+          <p class="spec-label ui-caption-1" style="margin-top:32px">Card group</p>
+          <fieldset class="radio-cards">
+            <legend class="lbl">Shape of the work</legend>
+            <label class="radio-card"><input type="radio" name="shape" checked><span class="radio-mark"></span><span class="radio-copy"><span class="radio-label">Retainer</span><span class="radio-help">A term of work, reviewed each quarter.</span></span></label>
+            <label class="radio-card"><input type="radio" name="shape"><span class="radio-mark"></span><span class="radio-copy"><span class="radio-label">Project</span><span class="radio-help">One brief, with a clear end.</span></span></label>
+            <label class="radio-card"><input type="radio" name="shape"><span class="radio-mark"></span><span class="radio-copy"><span class="radio-label">Workshop</span><span class="radio-help">A day with the leadership team.</span></span></label>
+          </fieldset>
+          <p class="spec-label ui-caption-1" style="margin-top:32px">Icon cards</p>
+          <fieldset class="radio-cards cols-4">
+            <legend class="lbl">Where it lives</legend>
+            <label class="radio-card"><input type="radio" name="home" checked><span class="cmd-ico">Sc</span><span class="radio-label">Schools</span></label>
+            <label class="radio-card"><input type="radio" name="home"><span class="cmd-ico">Pr</span><span class="radio-label">Projects</span></label>
+            <label class="radio-card"><input type="radio" name="home"><span class="cmd-ico">Pe</span><span class="radio-label">People</span></label>
+            <label class="radio-card"><input type="radio" name="home"><span class="cmd-ico">Ca</span><span class="radio-label">Calendar</span></label>
+          </fieldset>
+          <p class="spec-label ui-caption-1" style="margin-top:32px">People list</p>
+          <div class="field">
+            <span class="lbl" id="owner-label">Owner</span>
+            <div class="radio-list" role="radiogroup" aria-labelledby="owner-label">
+              <label class="radio-line"><input type="radio" name="owner" checked><span class="avatar">AM</span><span class="radio-copy"><span class="radio-label">Alex Morgan</span><span class="radio-help">Strategy</span></span><span class="radio-tick"></span></label>
+              <label class="radio-line"><input type="radio" name="owner"><span class="avatar">JL</span><span class="radio-copy"><span class="radio-label">Jordan Lee</span><span class="radio-help">Brand</span></span><span class="radio-tick"></span></label>
+              <label class="radio-line"><input type="radio" name="owner"><span class="avatar">SK</span><span class="radio-copy"><span class="radio-label">Sam Kelly</span><span class="radio-help">Enrolment</span></span><span class="radio-tick"></span></label>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="metrics">
+          <p class="kicker ed-caption">16 — Metrics and charts</p>
+          <h2 class="ed-title">Numbers, with the words still present.</h2>
+          <p class="lede ed-body">Charts follow the Chart.js set: bar, bubble, doughnut, pie, line, mixed, polar area, radar, and scatter. Colour comes from the secondary palette. The motion is Chart.js: the series draws in over one second.</p>
+          <div class="grid-4" style="margin-top:24px">
+            <article class="kpi"><p class="ui-caption-1" style="color:var(--muted)">Schools</p><p class="metric">42</p><p class="delta-up ui-footnote">4 this term</p></article>
+            <article class="kpi"><p class="ui-caption-1" style="color:var(--muted)">In review</p><p class="metric">9</p><svg class="spark" viewBox="0 0 120 32" aria-hidden="true"><polyline points="0,24 20,20 40,22 60,12 80,14 100,6 120,10"/></svg></article>
+            <article class="kpi"><span class="cmd-ico">Pr</span><p class="ui-caption-1" style="color:var(--muted)">Open projects</p><p class="metric">17</p></article>
+            <article class="kpi"><p class="ui-caption-1" style="color:var(--muted)">Overdue</p><p class="metric">2</p><p class="delta-down ui-footnote">Needs a decision</p></article>
+          </div>
+          <div class="chart-grid">
+            <article class="card chart-card">
+              <p class="spec-label ui-caption-1">Bar chart</p>
+              <div class="chart-frame"><canvas data-chart="bar" aria-label="Projects by practice this term"></canvas></div>
+            </article>
+            <article class="card chart-card">
+              <p class="spec-label ui-caption-1">Bubble chart</p>
+              <div class="chart-frame"><canvas data-chart="bubble" aria-label="Schools by enquiries, conversion, and size"></canvas></div>
+            </article>
+            <article class="card chart-card is-wide">
+              <p class="spec-label ui-caption-1">Doughnut and pie charts</p>
+              <div class="chart-split">
+                <div class="chart-frame"><canvas data-chart="doughnut" aria-label="Doughnut of work by practice"></canvas></div>
+                <div class="chart-frame"><canvas data-chart="pie" aria-label="Pie of work by practice"></canvas></div>
+              </div>
+            </article>
+            <article class="card chart-card">
+              <p class="spec-label ui-caption-1">Line chart</p>
+              <div class="chart-frame"><canvas data-chart="line" aria-label="Enquiries and visits from July to December"></canvas></div>
+            </article>
+            <article class="card chart-card">
+              <p class="spec-label ui-caption-1">Mixed chart</p>
+              <div class="chart-frame"><canvas data-chart="mixed" aria-label="Workshops as bars and enquiries as a line"></canvas></div>
+            </article>
+            <article class="card chart-card">
+              <p class="spec-label ui-caption-1">Polar area chart</p>
+              <div class="chart-frame"><canvas data-chart="polarArea" aria-label="Polar area of studio practices"></canvas></div>
+            </article>
+            <article class="card chart-card">
+              <p class="spec-label ui-caption-1">Radar chart</p>
+              <div class="chart-frame"><canvas data-chart="radar" aria-label="Radar comparing Rangeview and Harbour"></canvas></div>
+            </article>
+            <article class="card chart-card">
+              <p class="spec-label ui-caption-1">Scatter chart</p>
+              <div class="chart-frame"><canvas data-chart="scatter" aria-label="Scatter of enquiry volume against conversion"></canvas></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="chrome">
+          <p class="kicker ed-caption">17 — Chrome</p>
+          <h2 class="ed-title">Headers, navigation, filters, tabs.</h2>
+          <div class="stack stack-16" style="margin-top:24px">
+            <div class="page-head">
+              <div>
+                <p class="crumbs"><a href="#chrome">Studio</a><span>/</span><span>Schools</span></p>
+                <h3 class="ui-title-1">Schools</h3>
+                <p class="ui-body" style="color:var(--slate)">42 schools. Four joined this term.</p>
+              </div>
+              <div class="cluster">
+                <button class="btn btn-outline" type="button">Export</button>
+                <button class="btn" type="button">New project</button>
+              </div>
+            </div>
+            <div class="card" style="padding:0">
+              <div class="card-head" style="padding:16px 16px 0;border:0">
+                <div>
+                  <p class="ui-headline">Harbour College</p>
+                  <p class="ui-footnote" style="color:var(--muted)">Identity · In review</p>
+                </div>
+                <button class="btn btn-sm" type="button">Open</button>
+              </div>
+              <div class="sec-head" style="border:0;padding-top:0">
+                <p class="ui-body">The review has been with the school for six days.</p>
+                <button class="btn btn-ghost btn-sm" type="button">Nudge</button>
+              </div>
+              <div class="sec-foot">
+                <p class="ui-footnote" style="color:var(--muted)">Last edit 2 Oct 2026</p>
+                <div class="cluster"><button class="btn btn-outline btn-sm" type="button">Cancel</button><button class="btn btn-sm" type="button">Save changes</button></div>
+              </div>
+            </div>
+            <div class="filter-bar">
+              <input class="input" type="search" placeholder="Search schools" aria-label="Search schools" style="max-width:280px">
+              <div class="cluster">
+                <button class="chip is-on" type="button" aria-pressed="true">In review</button>
+                <button class="chip" type="button" aria-pressed="false">On track</button>
+                <button class="chip" type="button" aria-pressed="false">Blocked</button>
+              </div>
+              <button class="btn btn-sm btn-outline" type="button" data-open="filters">More filters</button>
+            </div>
+            <div class="divider"><span class="ui-caption-1">October</span></div>
+            <div class="divider is-plain"><button class="btn btn-ghost btn-sm" type="button">Load earlier notes</button></div>
+            <div class="grid-2">
+              <div>
+                <p class="spec-label ui-caption-1">Underline tabs</p>
+                <div data-tabs>
+                  <div class="tabs" role="tablist">
+                    <button class="tab" type="button" role="tab" aria-selected="true" data-tab="brief">Brief</button>
+                    <button class="tab" type="button" role="tab" aria-selected="false" data-tab="notes">Notes</button>
+                  </div>
+                  <div role="tabpanel" data-panel="brief" style="padding-top:12px"><p class="ui-body">The brief is the story the school already believes.</p></div>
+                  <div role="tabpanel" data-panel="notes" hidden style="padding-top:12px"><p class="ui-body">Notes stay in the studio until review.</p></div>
+                </div>
+              </div>
+              <div>
+                <p class="spec-label ui-caption-1">Pill tabs</p>
+                <div class="tabs tabs-pill" role="tablist" data-segment>
+                  <button class="tab" type="button" aria-selected="true">Month</button>
+                  <button class="tab" type="button" aria-selected="false">Quarter</button>
+                  <button class="tab" type="button" aria-selected="false">Year</button>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-vert" data-tabs>
+              <div class="tabs" role="tablist" aria-label="School sections">
+                <button class="tab" type="button" role="tab" aria-selected="true" data-tab="overview">Overview</button>
+                <button class="tab" type="button" role="tab" aria-selected="false" data-tab="people">People</button>
+                <button class="tab" type="button" role="tab" aria-selected="false" data-tab="files">Files</button>
+              </div>
+              <div>
+                <div role="tabpanel" data-panel="overview"><p class="ui-body">Rangeview is in narrative review.</p></div>
+                <div role="tabpanel" data-panel="people" hidden><p class="ui-body">Alex Morgan owns the relationship.</p></div>
+                <div role="tabpanel" data-panel="files" hidden><p class="ui-body">Two briefs, one signed narrative.</p></div>
+              </div>
+            </div>
+            <div class="cluster" style="align-items:flex-start">
+              <nav class="side-mini" aria-label="Product sections">
+                <p class="ui-caption-1" style="color:var(--muted)">Studio</p>
+                <a href="#records" aria-current="page">Schools</a>
+                <a href="#records">Projects</a>
+                <a href="#records">Calendar</a>
+                <p class="ui-caption-1" style="color:var(--muted)">Account</p>
+                <a href="#account">Sign in</a>
+              </nav>
+              <div class="stack stack-12" style="flex:1">
+                <div class="inline-cta">
+                  <div><p class="ui-headline">Invite the head</p><p class="ui-body">They only see the narrative, not the studio notes.</p></div>
+                  <button class="btn btn-sm" type="button">Send invite</button>
+                </div>
+                <div class="inline-cta is-brand">
+                  <div><p class="ui-headline">Schedule a meeting</p><p class="ui-body">A working session, not a sales call.</p></div>
+                  <button class="btn btn-inverse btn-sm" type="button">schedule</button>
+                </div>
+                <div class="cluster">
+                  <div class="pager" aria-label="Pages">
+                    <button type="button" aria-label="Previous">‹</button>
+                    <button type="button" aria-current="page">1</button>
+                    <button type="button">2</button>
+                    <button type="button">3</button>
+                    <button type="button" aria-label="Next">›</button>
+                  </div>
+                  <div class="pager is-text">
+                    <button type="button">Previous</button>
+                    <span class="ui-footnote">Page 1 of 12</span>
+                    <button type="button">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="records">
+          <p class="kicker ed-caption">18 — Records</p>
+          <h2 class="ed-title">Tables, trees, feeds, messages.</h2>
+          <div class="stack stack-24" style="margin-top:24px">
+            <div class="table-wrap">
+              <table class="data" data-select-table>
+                <thead><tr><th></th><th>School</th><th>Work</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td><input type="checkbox" aria-label="Select Rangeview"></td><td>Rangeview</td><td>Narrative</td><td><span class="badge badge-ok badge-round">On track</span></td></tr>
+                  <tr class="is-selected"><td><input type="checkbox" checked aria-label="Select Harbour"></td><td>Harbour</td><td>Identity</td><td><span class="badge badge-warn badge-round">In review</span></td></tr>
+                  <tr><td><input type="checkbox" aria-label="Select Northshore"></td><td>Northshore</td><td>Enrolment</td><td><span class="badge badge-bad badge-round">Blocked</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="grid-2">
+              <div>
+                <p class="spec-label ui-caption-1">Tree</p>
+                <ul class="tree">
+                  <li>
+                    <button type="button" data-tree aria-expanded="true">Rangeview</button>
+                    <ul>
+                      <li class="is-leaf"><button type="button">Narrative</button></li>
+                      <li class="is-leaf"><button type="button">Parent tour</button></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button type="button" data-tree aria-expanded="false">Harbour</button>
+                    <ul hidden>
+                      <li class="is-leaf"><button type="button">Identity</button></li>
+                      <li>
+                        <button type="button" data-tree aria-expanded="false">Workshops</button>
+                        <ul hidden>
+                          <li class="is-leaf"><button type="button">Leadership day</button></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="spec-label ui-caption-1">Activity</p>
+                <ol class="feed">
+                  <li><span class="avatar">JL</span><div><p class="ui-body"><strong>Jordan Lee</strong> moved Harbour to review</p><p class="ui-footnote" style="color:var(--muted)">2 hours ago</p></div></li>
+                  <li><span class="avatar">AM</span><div><p class="ui-body"><strong>Alex Morgan</strong> added a note on Rangeview</p><p class="ui-footnote" style="color:var(--muted)">Yesterday</p></div></li>
+                  <li><span class="avatar">SK</span><div><p class="ui-body"><strong>Sam Kelly</strong> booked the enrolment evening</p><p class="ui-footnote" style="color:var(--muted)">12 Oct 2026</p></div></li>
+                </ol>
+              </div>
+            </div>
+            <div class="card">
+              <p class="spec-label ui-caption-1">Messages</p>
+              <div class="thread">
+                <div class="msg"><span class="avatar">JL</span><div class="msg-bubble"><p class="ui-body">Harbour has the identity review. I would not chase before Thursday.</p><p class="ui-footnote" style="color:var(--muted)">Jordan · 09:40</p></div></div>
+                <div class="msg is-mine"><div class="msg-bubble"><p class="ui-body">Agreed. I will send the narrative only.</p></div></div>
+                <form class="msg-compose" data-thread action="#" >
+                  <input class="input" type="text" aria-label="Message" placeholder="Write a note">
+                  <button class="btn btn-sm" type="submit">Send</button>
+                </form>
+              </div>
+            </div>
+            <div class="empty" style="padding:24px">
+              <p class="ui-headline">No files yet</p>
+              <p class="ui-footnote" style="color:var(--muted)">Drop a brief when the school is ready.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="files">
+          <p class="kicker ed-caption">19 — Files, pickers, progress</p>
+          <h2 class="ed-title">Upload, choose, and show the wait.</h2>
+          <div class="grid-2" style="margin-top:24px">
+            <div>
+              <label class="drop">
+                <input id="brief-file" type="file" data-files multiple aria-label="Upload a brief">
+                <p class="ui-headline">Drop a brief</p>
+                <p class="ui-footnote" style="color:var(--muted)">PDF, up to 20 MB. Or browse.</p>
+              </label>
+              <div data-file-list>
+                <div class="file-row"><span class="ui-body">rangeview-narrative.pdf</span><span class="file-bar"><i style="--w:100%"></i></span><span class="ui-caption-1">Done</span></div>
+                <div class="file-row"><span class="ui-body">harbour-identity.pdf</span><span class="file-bar"><i style="--w:64%"></i></span><span class="ui-caption-1">64%</span></div>
+              </div>
+              <div class="upload-row" style="margin-top:12px">
+                <p class="ui-body">Or pick a single file.</p>
+                <label class="btn btn-sm btn-outline" for="brief-file">Browse</label>
+              </div>
+            </div>
+            <div class="stack stack-16">
+              <div>
+                <p class="spec-label ui-caption-1">Image picker</p>
+                <div class="pick-grid" role="radiogroup" aria-label="Cover">
+                  <label class="radio-card" style="display:grid"><input type="radio" name="cover" checked><span class="ph" style="--chip:#0085CA"></span><span class="radio-label">Harbour</span></label>
+                  <label class="radio-card" style="display:grid"><input type="radio" name="cover"><span class="ph" style="--chip:#333F48"></span><span class="radio-label">Rangeview</span></label>
+                  <label class="radio-card" style="display:grid"><input type="radio" name="cover"><span class="ph" style="--chip:#006A9E"></span><span class="radio-label">Northshore</span></label>
+                  <label class="radio-card" style="display:grid"><input type="radio" name="cover"><span class="ph" style="--chip:#F1F1F1"></span><span class="radio-label">Studio</span></label>
+                </div>
+              </div>
+              <div data-colours>
+                <p class="spec-label ui-caption-1">Colour <span data-colour-value>#0085CA</span></p>
+                <div class="cluster">
+                  <button class="colour-dot" type="button" data-colour="#0085CA" style="--chip:var(--ultramarine)" aria-pressed="true" aria-label="ultramarine"></button>
+                  <button class="colour-dot" type="button" data-colour="#333F48" style="--chip:var(--granite)" aria-pressed="false" aria-label="granite"></button>
+                  <button class="colour-dot" type="button" data-colour="#009CA6" style="--chip:var(--turquoise)" aria-pressed="false" aria-label="turquoise"></button>
+                  <button class="colour-dot" type="button" data-colour="#D0DF00" style="--chip:var(--chartreuse)" aria-pressed="false" aria-label="chartreuse"></button>
+                  <button class="colour-dot" type="button" data-colour="#FFD700" style="--chip:var(--citrine)" aria-pressed="false" aria-label="citrine"></button>
+                  <button class="colour-dot" type="button" data-colour="#D00070" style="--chip:var(--magenta)" aria-pressed="false" aria-label="magenta"></button>
+                  <button class="colour-dot" type="button" data-colour="#FE5000" style="--chip:var(--turmeric)" aria-pressed="false" aria-label="turmeric"></button>
+                  <button class="colour-dot" type="button" data-colour="#9B26B6" style="--chip:var(--amethyst)" aria-pressed="false" aria-label="amethyst"></button>
+                </div>
+              </div>
+              <div>
+                <p class="spec-label ui-caption-1">Gradient</p>
+                <div class="pick-grid" data-colours>
+                  <button class="grad" type="button" data-colour="Ultramarine" aria-pressed="true" aria-label="Ultramarine" style="background:linear-gradient(135deg,var(--ultramarine),var(--turquoise))"></button>
+                  <button class="grad" type="button" data-colour="Granite" aria-pressed="false" aria-label="Granite" style="background:linear-gradient(135deg,var(--granite),var(--ultramarine))"></button>
+                  <button class="grad" type="button" data-colour="Citrine" aria-pressed="false" aria-label="Citrine" style="background:linear-gradient(135deg,var(--citrine),var(--chartreuse))"></button>
+                  <button class="grad" type="button" data-colour="Magenta" aria-pressed="false" aria-label="Magenta" style="background:linear-gradient(135deg,var(--magenta),var(--amethyst))"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-2" style="margin-top:24px">
+            <div class="code"><code>imageseven</code><button class="btn btn-sm btn-inverse" type="button" data-copy>Copy</button></div>
+            <div class="carousel card" data-carousel>
+              <div class="carousel-window">
+                <div class="carousel-track">
+                  <article><p class="ui-headline">Rangeview</p><p class="ui-body">Narrative is with the school.</p></article>
+                  <article><p class="ui-headline">Harbour</p><p class="ui-body">Identity is in review.</p></article>
+                  <article><p class="ui-headline">Northshore</p><p class="ui-body">Enrolment is blocked on a date.</p></article>
+                </div>
+              </div>
+              <div class="cluster" style="justify-content:space-between">
+                <button class="btn btn-sm btn-outline" type="button" data-carousel-prev>Previous</button>
+                <div class="dots"><button type="button" data-dot="0" aria-current="true" aria-label="Slide 1"></button><button type="button" data-dot="1" aria-current="false" aria-label="Slide 2"></button><button type="button" data-dot="2" aria-current="false" aria-label="Slide 3"></button></div>
+                <button class="btn btn-sm btn-outline" type="button" data-carousel-next>Next</button>
+              </div>
+            </div>
+            <div class="stack stack-12">
+              <p class="spec-label ui-caption-1">Loading</p>
+              <div class="cluster"><span class="spin" role="status" aria-label="Loading"></span><span class="ui-body">Saving the narrative</span></div>
+              <div class="stack stack-8"><span class="skel h"></span><span class="skel"></span><span class="skel" style="width:80%"></span></div>
+              <div class="load-bar" aria-label="Upload 64 percent"><i style="--w:64%"></i></div>
+            </div>
+            <div>
+              <p class="spec-label ui-caption-1">Progress</p>
+              <ol class="psteps">
+                <li class="is-done"><span>1</span><span class="ui-footnote">Brief</span></li>
+                <li class="is-now"><span>2</span><span class="ui-footnote">Review</span></li>
+                <li><span>3</span><span class="ui-footnote">Approve</span></li>
+                <li><span>4</span><span class="ui-footnote">Publish</span></li>
+              </ol>
+              <ol class="psteps is-vert">
+                <li class="is-done"><span>1</span><span class="ui-body">Brief signed</span></li>
+                <li class="is-now"><span>2</span><span class="ui-body">With the school</span></li>
+                <li><span>3</span><span class="ui-body">Waiting on approval</span></li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="overlays">
+          <p class="kicker ed-caption">20 — Overlays</p>
+          <h2 class="ed-title">Drawers, dialogs, notifications.</h2>
+          <p class="lede ed-body">A drawer holds filters or navigation. A dialog asks. A notification tells, and can be dismissed. The command menu stays the way to jump.</p>
+          <div class="cluster" style="margin-top:24px">
+            <button class="btn" type="button" data-open="filters">Open filters</button>
+            <button class="btn btn-outline" type="button" data-open="nav">Open navigation</button>
+            <button class="btn btn-outline" type="button" data-open="confirm">Remove project</button>
+            <button class="btn btn-outline" type="button" data-open="wide">Project details</button>
+          </div>
+          <div class="grid-2" style="margin-top:24px">
+            <div class="note-list">
+              <article class="note-item is-unread" data-note-item>
+                <span class="avatar">JL</span>
+                <div style="flex:1"><p class="ui-headline">Harbour replied</p><p class="ui-body">The identity review is back, with three notes.</p><p class="ui-footnote" style="color:var(--muted)">12 minutes ago</p></div>
+                <button class="btn btn-ghost btn-sm" type="button" data-dismiss>Dismiss</button>
+              </article>
+              <article class="note-item" data-note-item>
+                <span class="avatar">AM</span>
+                <div style="flex:1"><p class="ui-headline">Workshop booked</p><p class="ui-body">Thursday, 10:00 AWST, enrolment team.</p></div>
+                <button class="btn btn-ghost btn-sm" type="button" data-dismiss>Dismiss</button>
+              </article>
+            </div>
+            <div class="alert">
+              <div style="flex:1"><p class="ui-headline">A file is still uploading</p><p class="ui-body">Harbour’s identity PDF is at 64%.</p></div>
+              <button class="btn btn-sm" type="button">View</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="feedback">
+          <p class="kicker ed-caption">21 — Feedback</p>
+          <h2 class="ed-title">Alerts, toasts, dialogs, empty states.</h2>
+          <div class="specimen stack stack-12">
+            <div class="alert"><div><p class="ui-headline">A workshop is on the calendar</p><p class="ui-body">Thursday, 10:00 AWST, with the enrolment team.</p></div></div>
+            <div class="alert alert-ok"><div><p class="ui-headline">Narrative approved</p><p class="ui-body">Rangeview signed off the first draft.</p></div></div>
+            <div class="alert alert-warn"><div><p class="ui-headline">Waiting on a decision</p><p class="ui-body">Harbour has had the review for six days.</p></div></div>
+            <div class="alert alert-bad"><div><p class="ui-headline">This file did not upload</p><p class="ui-body">Use a PDF under 20 MB and try again.</p></div></div>
+            <div class="cluster">
+              <button class="btn" type="button" data-open-modal>Open dialog</button>
+              <button class="btn btn-outline" type="button" data-toast>Show toast</button>
+            </div>
+            <div class="empty">
+              <p class="ui-title-3">No projects this quarter</p>
+              <p class="ui-body" style="color:var(--muted)">When a school is ready, the work will land here.</p>
+              <button class="btn btn-sm" type="button">New project</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="account">
+          <p class="kicker ed-caption">22 — Account</p>
+          <h2 class="ed-title">Sign in, without a shop attached.</h2>
+          <div class="auth" style="margin-top:32px">
+            <p class="wordmark"><img src="logo.png" alt="imageseven"></p>
+            <h3 class="ui-title-2">Sign in</h3>
+            <form class="stack stack-16" action="#" onsubmit="return false">
+              <div class="field"><label class="lbl" for="a-email">Email</label><input class="input" id="a-email" type="email" autocomplete="username" placeholder="you@imageseven.com.au"></div>
+              <div class="field"><label class="lbl" for="a-pass">Password</label><input class="input" id="a-pass" type="password" autocomplete="current-password" placeholder="••••••••"></div>
+              <button class="btn" type="submit">Continue</button>
+              <p class="ui-footnote" style="color:var(--muted)">Need an account? Ask the studio. There is no public sign-up shop.</p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div class="cmd-back" data-cmd-overlay hidden>
+    <div class="cmd cmd-modal" data-cmd role="dialog" aria-modal="true" aria-label="Command menu">
+      <label class="cmd-search">
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <input type="search" data-cmd-input placeholder="Search the studio" aria-label="Search the studio">
+      </label>
+      <div class="cmd-list">
+        <div data-cmd-group>
+          <p class="cmd-group">Navigate</p>
+          <button class="cmd-item" type="button" data-cmd-item data-label="Schools" data-toast="Opened Schools"><span class="cmd-ico">Sc</span><span>Schools</span><kbd class="kbd cmd-meta">G S</kbd></button>
+          <button class="cmd-item" type="button" data-cmd-item data-label="Projects" data-toast="Opened Projects"><span class="cmd-ico">Pr</span><span>Projects</span><kbd class="kbd cmd-meta">G P</kbd></button>
+          <button class="cmd-item" type="button" data-cmd-item data-label="People" data-toast="Opened People"><span class="cmd-ico">Pe</span><span>People</span><kbd class="kbd cmd-meta">G E</kbd></button>
+        </div>
+        <div data-cmd-group>
+          <p class="cmd-group">Create</p>
+          <button class="cmd-item" type="button" data-cmd-item data-label="New project" data-toast="New project"><span class="cmd-ico">+</span><span>New project</span><kbd class="kbd cmd-meta">N</kbd></button>
+          <button class="cmd-item" type="button" data-cmd-item data-label="Schedule a meeting" data-toast="Schedule a meeting"><span class="cmd-ico">Me</span><span>Schedule a meeting</span></button>
+        </div>
+      </div>
+      <p class="cmd-empty" data-cmd-empty hidden>No matches. Try a school, a person, or an action.</p>
+      <div class="cmd-foot"><span><kbd class="kbd">↑↓</kbd> move</span><span><kbd class="kbd">↵</kbd> select</span><span><kbd class="kbd">esc</kbd> close</span></div>
+    </div>
+  </div>
+
+  <div class="drawer-back" data-layer="filters" hidden>
+    <div class="drawer" role="dialog" aria-modal="true" aria-labelledby="filter-title">
+      <div class="cluster" style="justify-content:space-between">
+        <h3 class="ui-title-3" id="filter-title">Filters</h3>
+        <button class="btn btn-ghost btn-sm" type="button" data-close>Close</button>
+      </div>
+      <fieldset class="radio-group">
+        <legend class="lbl">Owner</legend>
+        <div class="radio-options">
+          <label class="radio"><input type="radio" name="drawer-owner" checked><span class="radio-mark"></span><span class="radio-label">Anyone</span></label>
+          <label class="radio"><input type="radio" name="drawer-owner"><span class="radio-mark"></span><span class="radio-label">Alex Morgan</span></label>
+          <label class="radio"><input type="radio" name="drawer-owner"><span class="radio-mark"></span><span class="radio-label">Jordan Lee</span></label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <span class="lbl">Status</span>
+        <div class="cluster">
+          <button class="chip is-on" type="button" aria-pressed="true">In review</button>
+          <button class="chip" type="button" aria-pressed="false">Blocked</button>
+        </div>
+      </div>
+      <div class="cluster" style="margin-top:auto;justify-content:flex-end">
+        <button class="btn btn-outline" type="button" data-close>Clear</button>
+        <button class="btn" type="button" data-close>Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawer-back is-left" data-layer="nav" hidden>
+    <div class="drawer" role="dialog" aria-modal="true" aria-label="Navigation">
+      <button class="btn btn-ghost btn-sm" type="button" data-close>Close</button>
+      <nav class="side-mini" style="width:auto;border:0;padding:0">
+        <p class="ui-caption-1" style="color:var(--muted)">Studio</p>
+        <a href="#records" data-close>Schools</a>
+        <a href="#dates" data-close>Calendar</a>
+        <a href="#files" data-close>Files</a>
+        <a href="#account" data-close>Account</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="modal-back" data-layer="confirm" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+      <h3 class="ui-title-3" id="confirm-title">Remove this project?</h3>
+      <p class="ui-body">Harbour’s identity work leaves the quarter. The files stay in the studio.</p>
+      <div class="cluster" style="justify-content:flex-end">
+        <button class="btn btn-outline" type="button" data-close>Cancel</button>
+        <button class="btn btn-danger" type="button" data-close>Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-back" data-layer="wide" hidden>
+    <div class="modal modal-wide" role="dialog" aria-modal="true" aria-labelledby="wide-title">
+      <h3 class="ui-title-3" id="wide-title">Project details</h3>
+      <div class="grid-2">
+        <div class="field"><label class="lbl" for="p-name">Name</label><input class="input" id="p-name" value="Harbour identity"></div>
+        <div class="date" data-date="single" data-value="2026-10-21">
+          <span class="lbl" id="p-when">Review</span>
+          <button class="date-trigger" type="button" data-date-trigger aria-haspopup="dialog" aria-expanded="false" aria-labelledby="p-when"><span data-date-label>21 Oct 2026</span></button>
+          <div class="date-pop" data-date-body hidden role="dialog" aria-label="Review date"></div>
+        </div>
+      </div>
+      <fieldset class="radio-group">
+        <legend class="lbl">Stage</legend>
+        <div class="radio-options is-row">
+          <label class="radio"><input type="radio" name="stage" checked><span class="radio-mark"></span><span class="radio-label">Discovery</span></label>
+          <label class="radio"><input type="radio" name="stage"><span class="radio-mark"></span><span class="radio-label">In review</span></label>
+          <label class="radio"><input type="radio" name="stage"><span class="radio-mark"></span><span class="radio-label">Approved</span></label>
+        </div>
+      </fieldset>
+      <div class="cluster" style="justify-content:flex-end">
+        <button class="btn btn-outline" type="button" data-close>Cancel</button>
+        <button class="btn" type="button" data-close>Save changes</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toaster" aria-live="polite"></div>
+
+  <div class="modal-back" data-modal hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+      <h3 class="ui-title-3" id="dialog-title">Schedule a meeting</h3>
+      <p class="ui-body">Pick a time with the studio. Nothing is booked until you confirm.</p>
+      <div class="date" data-date="single" data-value="2026-10-15">
+        <span class="lbl" id="m-when-label">Preferred day</span>
+        <button class="date-trigger" type="button" data-date-trigger aria-haspopup="dialog" aria-expanded="false" aria-labelledby="m-when-label">
+          <span data-date-label>15 Oct 2026</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 6.5h12M5 2v2M11 2v2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <div class="date-pop" data-date-body hidden role="dialog" aria-label="Preferred day"></div>
+      </div>
+      <div class="cluster" style="justify-content:flex-end">
+        <button class="btn btn-outline" type="button" data-close-modal>Cancel</button>
+        <button class="btn" type="button" data-close-modal>Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+  <script src="main.js?v=2"></script>
+</body>
+</html>
